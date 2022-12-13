@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="/Element/menuheader/asset/main.css">
   <link rel="stylesheet" href="/Element/big_songinfo/main.css">
   <link rel="stylesheet" href="/Element/playlist/main.css">
+  <link rel="stylesheet" href="/Page/User_Profile/CSS/UserProfile_Page.css">
 </head>
     
     
@@ -89,83 +90,100 @@
                     </div>
                     <ul class="lever-right">
                         <li class="login-container">
-                          <a href="/Page/User_Profile/Userprofile_toptrack.html">
-                            <img src="https://avatar.talk.zdn.vn/default.jpg" alt=""  class="login-img-user" >
-                            <span class="login-img-user-name"> Đỗ Trần Mai Anh</span>
-                          </a>
+                                <img src="https://avatar.talk.zdn.vn/default.jpg" alt=""  class="login-img-user" >
+                                <span class="login-img-user-name"> Đỗ Trần Mai Anh</span>
                         </li>
 
                         <li class="setting-item">
-                          <a href="/Page/Setting_Page/settingMain.html">
-                            <button class="btn tooltip-btn is-hover-circle button" >
-                              <i class="fa-solid fa-gear"></i>
-                            </button>
-                          </a>
-                        </li>
+                            <a href="/Page/Setting_Page/settingMain.html">
+                              <button class="btn tooltip-btn is-hover-circle button" >
+                                <i class="fa-solid fa-gear"></i>
+                              </button>
+                            </a>
+                          </li>
                     
                     </ul>
                 </div> 
             </header>  
             <div class="container">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-img" >
-                            <a href=""></a>
-                            <img src="./photo-1-16663423342971966774882.webp" alt="" class="img-responsive">
-                        </div>    
-                 
-                        <div class="card-content">
-                            <div class="musicsong">
-                                <!-- <div class="icon-musicsong">
-                                    <i class="fa-solid fa-music"></i>
-                                </div> -->
-                                <div class="info-musicsong">
-                                    <h3 class="card-header">Single</h3>
-                                    <h2 class="card-title">Star Walkin' (League of Legends Worlds Anthem)</h2>
-                                    <h4 class="card-text">By Lil Nas X</h4>
-                                </div>
-                            </div>
-                            <div class="music-content">
-                                <div id="first" class="music-icon music-play">
-                                   <i id="icon-first"  class="icon-music fa-solid fa-play"></i>
-                                </div>
-                                <div class="music-icon music-share">
-                                   <i class="icon-music fa-solid fa-share-nodes"></i>
-                                </div>
-                                <div class="music-icon music-dowload">
-                                   <i class="icon-music fa-solid fa-arrow-down"></i>
-                                </div>
-                                <div class="music-search">
-            
-                                </div>
-                            </div>
-                            
-                        </div>
+                <div class="category">
+                    <div class="category__toptrack">
+                      <a href="./Userprofile_toptrack.html">
+                        <p>Top tracks this month</p>
+                      </a>
+                        
                     </div>
-                   
-                    
-                 
-                </div>
-                <div class="carousel">
-                  <h3 class="carousel-title">More by Lil Nas X
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </h3>
-                  <div class="carousel-item">
-                      <div class="carousel-card">
+                    <div class="category__public">
+                      <a href="./Userprofile_public.html"><p>Public Playlists</p></a>
+                    </div>
+                    <div class="category__following" id="active">
+                      <a href="./Userprofile_following.html">
+                        <p>Following</p>
+                      </a>
+                    </div>
+                 </div>
+                <div class="carousel">                    
+                    <div class="carousel-item">
+                        <div class="carousel-card">
+                            <div class="carousel-card-body">
+                                <div class="carousel-card-img">
+                                  <a href="">
+                                    <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                  </a>
+                                </div>    
+                            
+                                <div class="carousel-card-content">
+                                    <h2 class="carousel-card-title">Midnights</h2>
+                                    <h3 class="carousel-card-text">Taylor Swift</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-card">
+                            <div class="carousel-card-body">
+                                <div class="carousel-card-img">
+                                  <a href="">
+                                    <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                  </a>
+                                </div>    
+                            
+                                <div class="carousel-card-content">
+                                    <h2 class="carousel-card-title">Midnights</h2>
+                                    <h3 class="carousel-card-text">Taylor Swift</h3>
+                                </div>
+                            </div>
+                        </div>            
+                        <div class="carousel-card">
                           <div class="carousel-card-body">
-                              <div class="carousel-card-img">
-                                <a href="">
-                                  <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
-                                  <i class="fa-regular fa-circle-play"></i>
-                                </a>
-                              </div>    
+                            <div class="carousel-card-img">
+                              <a href="">
+                                <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
+                                <i class="fa-regular fa-circle-play"></i>
+                              </a>
+                            </div>      
                           
                               <div class="carousel-card-content">
                                   <h2 class="carousel-card-title">Midnights</h2>
                                   <h3 class="carousel-card-text">Taylor Swift</h3>
                               </div>
                           </div>
-                      </div>        
+                      </div> 
+                      <div class="carousel-card">
+                          <div class="carousel-card-body">
+                            <div class="carousel-card-img">
+                              <a href="">
+                                <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
+                                <i class="fa-regular fa-circle-play"></i>
+                              </a>
+                            </div>     
+                          
+                              <div class="carousel-card-content">
+                                  <h2 class="carousel-card-title">Midnights</h2>
+                                  <h3 class="carousel-card-text">Taylor Swift</h3>
+                              </div>
+                          </div>
+                      </div> 
                       <div class="carousel-card">
                         <div class="carousel-card-body">
                           <div class="carousel-card-img">
@@ -173,29 +191,14 @@
                               <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
                               <i class="fa-regular fa-circle-play"></i>
                             </a>
-                          </div>      
+                          </div>    
                         
                             <div class="carousel-card-content">
                                 <h2 class="carousel-card-title">Midnights</h2>
                                 <h3 class="carousel-card-text">Taylor Swift</h3>
                             </div>
                         </div>
-                    </div> 
-                    <div class="carousel-card">
-                        <div class="carousel-card-body">
-                          <div class="carousel-card-img">
-                            <a href="">
-                              <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
-                              <i class="fa-regular fa-circle-play"></i>
-                            </a>
-                          </div>     
-                        
-                            <div class="carousel-card-content">
-                                <h2 class="carousel-card-title">Midnights</h2>
-                                <h3 class="carousel-card-text">Taylor Swift</h3>
-                            </div>
-                        </div>
-                    </div> 
+                    </div>   
                     <div class="carousel-card">
                       <div class="carousel-card-body">
                         <div class="carousel-card-img">
@@ -210,24 +213,11 @@
                               <h3 class="carousel-card-text">Taylor Swift</h3>
                           </div>
                       </div>
-                  </div>   
-                  <div class="carousel-card">
-                    <div class="carousel-card-body">
-                      <div class="carousel-card-img">
-                        <a href="">
-                          <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
-                          <i class="fa-regular fa-circle-play"></i>
-                        </a>
-                      </div>    
-                    
-                        <div class="carousel-card-content">
-                            <h2 class="carousel-card-title">Midnights</h2>
-                            <h3 class="carousel-card-text">Taylor Swift</h3>
-                        </div>
+                  </div>     
                     </div>
-                </div>     
-                  </div>
-              </div>
+                    
+                </div>
+                 
           </div>
       </div>
         <nav class="col-2" id="rnav-section">
