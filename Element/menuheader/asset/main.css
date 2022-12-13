@@ -1,4 +1,12 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(/menuheader/asset/font/Montserrat-Regular.ttf);
+}
+*{
+    font-family: Montserrat;
+}
 body {
+ 
     margin: 0;
     padding: 0;
     line-height: 1.5;
@@ -181,7 +189,7 @@ ul,li{
 #content-section {
     overflow:auto;
     width: 70%;
-    margin-left: 20rem;
+    margin-left: 23rem;
 }
 #lnav-section, #rnav-section {
     position: fixed;
@@ -193,10 +201,11 @@ ul,li{
     transition: 0.5s;
     background-color: rgb(18,25,44);
     left: 0;
-    width: 17rem;
+    width: 20rem;
 }
 #rnav-section{
     padding: 1.25rem 1rem;
+    width: 19rem;
     transition: 0.5s;
     background-color: rgb(18,25,44);
     right: 0;
@@ -221,7 +230,11 @@ ul,li{
     font-weight: 600;
     color: #fff;
 }
-
+.nav__list {
+    margin-left: 5px;
+    display: flexbox;
+    justify-content: center;
+}
 .nav__link{
     display: flex;
     align-items: center;
@@ -233,7 +246,7 @@ ul,li{
 }
 
 .nav__icon{
-   font-size: 2.5rem;
+   font-size: 2rem;
    margin-right: 15px;
    color: #fff;
 }
@@ -241,6 +254,11 @@ ul,li{
 .nav__text{
     color: #fff;
     font-size: 1.5rem;
+}
+.nav__link:hover {
+    font-weight: bold;
+    background-color: #28C6F7;
+    padding-left: 10px;
 }
 
 .btn__create-list{
@@ -256,13 +274,20 @@ ul,li{
 .mylist {
     margin-top: 15px;
 }
-.mylist-group{
+/* .mylist-group{
     margin-top: 10px;
     font-size: 15px;
-}
+} */
 
 .mylist-group-item{
-    font-size: 12px;
+    font-size: 0.75em;
+    margin-top: 13px;
+    padding-left: 10px;
+}
+.mylist-group-item:hover {
+    color: #28C6F7;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -277,9 +302,9 @@ ul,li{
     flex-direction: column;
 }
 
+
 .setting-item > button {
-    margin-left: 10px;
-    margin-bottom: 5px;
+    color: white;
 }
 .r-list-group{
     display: flex;
@@ -316,12 +341,13 @@ ul,li{
     
 }
 .img-user-name{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    color: #53E9D4;
     margin: 0; 
 }
 
 .song-user{
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 0; 
 }
 

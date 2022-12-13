@@ -18,16 +18,17 @@ ul {
     font-size: large;
  
 }
-ul > li {
-    padding-right: 20px;
+ul > li a.tab{
+    margin-right: 20px;
     font-weight: bold;
     font-size: 1em;
 }
+
 ul li a{
     text-decoration: none;
     color: white;
 }
-a.tab:hover, a#active {
+li > a.tab:hover, a#active {
     color: aquamarine;
     border-bottom: 2px solid aquamarine;
     padding-bottom: 8px;
@@ -43,6 +44,7 @@ hr {
 .settingMain__section,.settingMain__title{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
 }
@@ -94,6 +96,3 @@ div > p {
     font-size: 15px;
 }
 
-.btn-account button {
-    display: block;
-}
