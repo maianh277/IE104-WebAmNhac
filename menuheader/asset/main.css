@@ -26,7 +26,7 @@ body {
 }
 
 .header {
-    display: flex;
+    display: flexbox;
     justify-content: space-around;
     align-items: center;
     /* position: fixed; */
@@ -165,7 +165,7 @@ button, input, optgroup, select, textarea {
     margin: 10px 5px;
 }
 .login-img-user-name {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .img-user ,.login-img-user{
