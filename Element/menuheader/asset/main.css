@@ -288,6 +288,8 @@ ul,li{
     color: #28C6F7;
     font-weight: bold;
     cursor: pointer;
+    transition: right .4s;
+
 }
 
 

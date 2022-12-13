@@ -1,9 +1,11 @@
+*{
+margin: 0;
+}
 .card{
     display: flex;
-    position: relative;
     flex-direction:row;
-    width: 690px;
-    height: 200px;
+    width: 100%;
+    height: 300px;
     background-color: #2e3c62;
     border-radius: 25px;
     padding: 16px;
@@ -12,8 +14,8 @@
 
 .card-body{
     display: flex;
-    position: relative;
     flex-direction:row;
+    align-items: center;
     height: 100%;
     width: 100%;
 }
@@ -30,25 +32,34 @@ a {
     display: flex;
     position: relative;
     height: 100%;
-    width: 30%;
-    background-color: palevioletred;
+    width: 300px;
+    background: url(/img/star\ walkin.jfif) no-repeat;
+    background-size: 300px;
     border-radius: 20px;
    
 }
 
 
 .img-responsive{
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     display: block;
     border-radius: 10%;
     
 }
-
+.card-header, .card-text {
+   font-size: 1.5rem;
+   border: none;
+   font-style: italic;
+}
+.card-header {
+   font-weight: 800;
+   padding: 0;
+}
  .card-content{
     min-height: 62px;
-    padding-left: 20px;
-    margin-top: 40px;
+    margin-left: 20px;
+    font-weight: 600;
  }
 
  .musicsong{
@@ -73,7 +84,10 @@ a {
  .card-header,.card-title,.card-text{
     margin: 0px;
  }
-
+.card-title {
+   font-size: 3rem;
+   font-weight: 800;
+}
  .music-content{
     display: flex;
     flex-direction: row;

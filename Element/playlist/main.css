@@ -1,32 +1,24 @@
-.container{
-    display: flex;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
 .carousel{
-    display: flex;
-    flex-direction: column;
+    margin-top: 20px;
+}
+.carousel-title {
+    font-style: italic;
+    font-weight: 600;
 }
 .carousel-item{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
-.card{
-    display: flex;
-    position: relative;
-    flex-direction: column;
+.carousel-card{
     width: 184px;
     height: 244px;
     background-color: #fff;
     border-radius: 10%;
     padding: 16px;
-    margin-right: 60px;
+
 }
 
-.card-body{
-    
+.carousel-card-body{
     height: 100%;
 }
 
@@ -38,15 +30,19 @@ a {
     letter-spacing: normal;
 }
 
-.card-img{
+.carousel-card-img{
     display: flex;
     position: relative;
     height: 75%;
     width: 100%;
-    margin-bottom: 10px;
 }
-
-
+.btn-play i {
+    color: aqua;
+    position: relative;
+    display: inline-block;
+    left: 125px;
+    top: -20px;
+}
 .img-responsive{
     max-width: 100%;
     height: auto;
@@ -55,15 +51,17 @@ a {
     
 }
 
-.card-content{
+.carousel-card-content{
     min-height: 62px;
     color: #333;
+
  }
-.card-title{
-    margin-top: 5px;
-    margin-bottom: 5px;
+.carousel-card-title{
+    font-weight: 700;
+    font-size: 2rem;
 }
 
-.card-text{
+.carousel-card-text{
     margin: 0;
+    font-size: 1rem;
 }
