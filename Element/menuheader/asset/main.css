@@ -6,7 +6,6 @@
     font-family: Montserrat;
 }
 body {
- 
     margin: 0;
     padding: 0;
     line-height: 1.5;
@@ -34,12 +33,12 @@ body {
 }
 
 .header {
-    display: flexbox;
-    justify-content: space-around;
+    background-color: #171e31;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    /* position: fixed; */
     width: 100%;
-    margin-top: -2rem;
+    margin-top: -3rem;
     padding: 0;
     min-width: 50%;
     transition: right .4s;
@@ -49,8 +48,9 @@ body {
     width: 100%;
 }
 .level {
+    padding: 10px 0px ;
     display: flex;
-    margin-bottom: 1rem;
+    background-color: #171e31;
 }
 
 .header .level-left {
@@ -103,7 +103,9 @@ button, input, optgroup, select, textarea {
 
     word-break: normal;
 }
-
+#content-section {
+    width: 80%;
+}
 .icon {
     line-height: 66%;
     display: inline-block;
@@ -114,7 +116,7 @@ button, input, optgroup, select, textarea {
     width: 200%;
     max-width: 540px;
 }
-
+.contain
 
 .search__container .icon {
     position: absolute;
