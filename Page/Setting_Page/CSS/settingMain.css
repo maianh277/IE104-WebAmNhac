@@ -2,6 +2,10 @@
     margin: 0;
     
 }
+html{
+    overflow-x: hidden;
+    }
+
 body {
     background-color: #171E31;
     color: white;

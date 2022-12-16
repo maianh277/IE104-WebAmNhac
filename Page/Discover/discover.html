@@ -8,16 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="/Page/Setting_Page/CSS/settingMain.css">
-  <link rel="stylesheet" href="/Page/Playlist/CSS/playlist.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/Element/menuheader/asset/base.css">
   <link rel="stylesheet" href="/Element/menuheader/asset/main.css">
-  <link rel="stylesheet" href="/Element/big_songinfo/main.css">
+  <link rel="stylesheet" href="/Page/Home/CSS/home.css">
   <link rel="stylesheet" href="/Element/playlist/main.css">
-  <link rel="stylesheet" href="./CSS/main.css">
+  <link rel="stylesheet" href="./CSS/discover.css">
+  
 </head>
     
     
@@ -34,7 +33,7 @@
               
               <ul class="nav__list">
                   <li>
-                    <a href="/Page/Home/home.html" title="Home" class="nav__link active">
+                    <a href="" title="Home" class="nav__link active">
                       <i class="nav__icon fa-solid fa-house"></i>
                       <span class="nav__text">Home</span>
                       </a>
@@ -67,15 +66,15 @@
               <hr color="#212e51" width="100%" size="0.5px" />
 
               <div class="mylist">
-                <a href=""class="btn__create-list" >
-                  <i class="fa-solid fa-plus"></i>
-                  Create new playlist</a>
-                  <ul class="mylist-group">
-                    <li class="mylist-group-item"><a href="/Page/Playlist/Playlist_Page.html">Playlist của Mai Anh</a></li>
-                    <li class="mylist-group-item">Music is my life</li>
-                    <li class="mylist-group-item">Midnights</li>
-                  </ul>
-            </div>
+                  <a href=""class="btn__create-list" >
+                    <i class="fa-solid fa-plus"></i>
+                    Create new playlist</a>
+                    <ul class="mylist-group">
+                      <li class="mylist-group-item">Playlist của Mai Anh</li>
+                      <li class="mylist-group-item">Music is my life</li>
+                      <li class="mylist-group-item">Midnights</li>
+                    </ul>
+              </div>
               
           </div>
         </nav>
@@ -108,65 +107,46 @@
                 </div> 
             </header>  
             <div class="container">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-img" >
-                            <a href=""></a>
-                            <img src="./photo-1-16663423342971966774882.webp" alt="" class="img-responsive">
-                        </div>    
-                 
-                        <div class="card-content">
-                            <div class="musicsong">
-                                <!-- <div class="icon-musicsong">
-                                    <i class="fa-solid fa-music"></i>
-                                </div> -->
-                                <div class="info-musicsong">
-                                    <h3 class="card-header">Single</h3>
-                                    <h2 class="card-title">Star Walkin' (League of Legends Worlds Anthem)</h2>
-                                    <h4 class="card-text">By Lil Nas X</h4>
-                                </div>
-                            </div>
-                            <div class="music-content">
-                                <div id="first" class="music-icon music-play">
-                                   <i id="icon-first"  class="icon-music fa-solid fa-play"></i>
-                                </div>
-                                <div class="music-icon music-share">
-                                   <i class="icon-music fa-solid fa-share-nodes"></i>
-                                </div>
-                                <div class="music-icon music-dowload">
-                                   <i class="icon-music fa-solid fa-arrow-down"></i>
-                                </div>
-                                <div class="music-search">
-            
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                   
-                    
-                 
+                <div class="web-header">
+                    <h1>Discover</h1>
                 </div>
+
                 <div class="carousel">
-                  <h3 class="carousel-title">More by Lil Nas X
-                    <i class="fa-solid fa-chevron-right"></i>
-                  </h3>
-                  <div class="carousel-item">
+                    <h3 class="carousel-title">More by Lil Nas X
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </h3>
+                    <div class="carousel-item">
+                        <div class="carousel-card">
+                            <div class="carousel-card-body">
+                                <div class="carousel-card-img">
+                                  <a href="">
+                                    <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                  </a>
+                                </div>    
+                            
+                                <div class="carousel-card-content">
+                                    <h2 class="carousel-card-title">Midnights</h2>
+                                    <h3 class="carousel-card-text">Taylor Swift</h3>
+                                </div>
+                            </div>
+                        </div>        
+                       
                       <div class="carousel-card">
                           <div class="carousel-card-body">
-                              <div class="carousel-card-img">
-                                <a href="">
-                                  <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
-                                  <i class="fa-regular fa-circle-play"></i>
-                                </a>
-                              </div>    
+                            <div class="carousel-card-img">
+                              <a href="">
+                                <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
+                                <i class="fa-regular fa-circle-play"></i>
+                              </a>
+                            </div>     
                           
                               <div class="carousel-card-content">
                                   <h2 class="carousel-card-title">Midnights</h2>
                                   <h3 class="carousel-card-text">Taylor Swift</h3>
                               </div>
                           </div>
-                      </div>        
+                      </div> 
                       <div class="carousel-card">
                         <div class="carousel-card-body">
                           <div class="carousel-card-img">
@@ -174,29 +154,14 @@
                               <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
                               <i class="fa-regular fa-circle-play"></i>
                             </a>
-                          </div>      
+                          </div>    
                         
                             <div class="carousel-card-content">
                                 <h2 class="carousel-card-title">Midnights</h2>
                                 <h3 class="carousel-card-text">Taylor Swift</h3>
                             </div>
                         </div>
-                    </div> 
-                    <div class="carousel-card">
-                        <div class="carousel-card-body">
-                          <div class="carousel-card-img">
-                            <a href="">
-                              <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
-                              <i class="fa-regular fa-circle-play"></i>
-                            </a>
-                          </div>     
-                        
-                            <div class="carousel-card-content">
-                                <h2 class="carousel-card-title">Midnights</h2>
-                                <h3 class="carousel-card-text">Taylor Swift</h3>
-                            </div>
-                        </div>
-                    </div> 
+                    </div>   
                     <div class="carousel-card">
                       <div class="carousel-card-body">
                         <div class="carousel-card-img">
@@ -211,24 +176,128 @@
                               <h3 class="carousel-card-text">Taylor Swift</h3>
                           </div>
                       </div>
-                  </div>   
-                  <div class="carousel-card">
-                    <div class="carousel-card-body">
-                      <div class="carousel-card-img">
-                        <a href="">
-                          <img src="/Element/playlist/song-img.webp" alt="" class="img-responsive">
-                          <i class="fa-regular fa-circle-play"></i>
-                        </a>
-                      </div>    
+                  </div>     
+                    </div>
+                </div>
+                <div class="playlist-section">
+                    <div class="playlist-info">
+                        <div class="playlist-info-title">
+                            <h3 class="playlist-info-title-header">Montly Top Artists</h3>
                     
-                        <div class="carousel-card-content">
-                            <h2 class="carousel-card-title">Midnights</h2>
-                            <h3 class="carousel-card-text">Taylor Swift</h3>
+                            
+                           
+                             
+                        </div>
+                        <div class="rows">
+                            <div class="rows-container">
+                                <p class="rows-container-numer">01</p>
+                                <img  class="rows-container-img" src="" alt="" class="rows-img">
+                                <h4 class="rows-container-singer">Talor Swift</h4>
+                                <button  class="rows-container-btn">Folow</button>
+                                <i  class="rows-container-icon fa-solid fa-ellipsis"></i>
+                            </div>
+
+                            <div class="rows-container">
+                                <p class="rows-container-numer">02</p>
+                                <img  class="rows-container-img" src="" alt="" class="rows-img">
+                                <h4 class="rows-container-singer">Lil Nas X</h4>
+                                <button  class="rows-container-btn">Folow</button>
+                                <i  class="rows-container-icon fa-solid fa-ellipsis"></i>
+                            </div>
+
+                            <div class="rows-container">
+                                <p class="rows-container-numer">03</p>
+                                <img  class="rows-container-img" src="" alt="" class="rows-img">
+                                <h4 class="rows-container-singer">The Weeknd</h4>
+                                <button  class="rows-container-btn">Folow</button>
+                                <i  class="rows-container-icon fa-solid fa-ellipsis"></i>
+                            </div>
+
+                            <div class="rows-container">
+                                <p class="rows-container-numer">04</p>
+                                <img  class="rows-container-img" src="" alt="" class="rows-img">
+                                <h4 class="rows-container-singer">Bruno Mars</h4>
+                                <button  class="rows-container-btn">Folow</button>
+                                <i  class="rows-container-icon fa-solid fa-ellipsis"></i>
+                            </div>
+                            
+                            <div class="rows-container">
+                                <p class="rows-container-numer">05</p>
+                                <img  class="rows-container-img" src="" alt="" class="rows-img">
+                                <h4 class="rows-container-singer">Post Malone</h4>
+                                <button  class="rows-container-btn">Folow</button>
+                                <i  class="rows-container-icon fa-solid fa-ellipsis"></i>
+                            </div>
+
                         </div>
                     </div>
-                </div>     
-                  </div>
-              </div>
+
+                    <div class="playlist-info">
+                        <div class="playlist-info-title">
+                            <h3 class="playlist-info-title-header">Billboard Top Tracks</h3>
+                            
+                           
+                             
+                        </div>
+                        <div class="rows">
+                            <div class="rows-container">
+                                <p class="rows-container-numer">01</p>
+                                <img  class="rows-container-img" src="" alt="" class="rows-img">
+                                <div class="rows-container-info">
+                                    <h4 class="rows-container-song">When I'm Alone</h4>
+                                    <p class="rows-container-singer-2">Post Malone</p>
+                                </div>
+                                <i class="rows-container-like fa-solid fa-heart"></i>
+                                <i  class="rows-container-icon fa-solid fa-ellipsis"></i>
+                            </div>
+
+                            <div class="rows-container">
+                                <p class="rows-container-numer">02</p>
+                                <img  class="rows-container-img" src="" alt="" class="rows-img">
+                                <div class="rows-container-info">
+                                    <h4 class="rows-container-song">Thấy Chưa</h4>
+                                    <p class="rows-container-singer-2">Ngọt</p>
+                                </div>
+                                <i class="rows-container-like fa-solid fa-heart"></i>
+                                <i  class="rows-container-icon fa-solid fa-ellipsis"></i>
+                            </div>
+
+                            <div class="rows-container">
+                                <p class="rows-container-numer">03</p>
+                                <img  class="rows-container-img" src="" alt="" class="rows-img">
+                                <div class="rows-container-info">
+                                    <h4 class="rows-container-song">Industry Baby</h4>
+                                    <p class="rows-container-singer-2">Lil Nas X ft.Jack Harlow</p>
+                                </div>
+                                <i class="rows-container-like fa-solid fa-heart"></i>
+                                <i  class="rows-container-icon fa-solid fa-ellipsis"></i>
+                            </div>
+
+                            <div class="rows-container">
+                                <p class="rows-container-numer">04</p>
+                                <img  class="rows-container-img" src="" alt="" class="rows-img">
+                                <div class="rows-container-info">
+                                    <h4 class="rows-container-song">Sunroof</h4>
+                                    <p class="rows-container-singer-2">Nicky Youre ft. dazy</p>
+                                </div>
+                                <i class="rows-container-like fa-solid fa-heart"></i>
+                                <i  class="rows-container-icon fa-solid fa-ellipsis"></i>
+                            </div>
+                            
+                            <div class="rows-container">
+                                <p class="rows-container-numer">05</p>
+                                <img  class="rows-container-img" src="" alt="" class="rows-img">
+                                <div class="rows-container-info">
+                                    <h4 class="rows-container-song">Heads in the cloud</h4>
+                                    <p class="rows-container-singer-2">Hayd</p>
+                                </div>
+                                <i class="rows-container-like fa-solid fa-heart"></i>
+                                <i  class="rows-container-icon fa-solid fa-ellipsis"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
           </div>
       </div>
         <nav class="col-2" id="rnav-section">
