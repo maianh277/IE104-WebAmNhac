@@ -2,10 +2,6 @@
     margin: 0;
     
 }
-html{
-    overflow-x: hidden;
-    }
-
 body {
     background-color: #171E31;
     color: white;
@@ -100,3 +96,10 @@ div > p {
     font-size: 15px;
 }
 
+#Notification.active{
+    display: none;
+}
+
+#Friend_Activity.active{
+    display: none;
+}
