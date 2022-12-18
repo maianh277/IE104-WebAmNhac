@@ -10,7 +10,7 @@ const repeat = document.querySelector('.repeat-btn');
 const musicImage = document.querySelector('.track-art');
 const musicTitle = document.querySelector('.title');
 const musicArtist = document.querySelector('.artist');
-const musicButton = document.querySelector('#music-btn');
+const musicButton = document.querySelector('fa-regular fa-circle-play');
 
 let indexSong =0;
 let isRepeat = false;
