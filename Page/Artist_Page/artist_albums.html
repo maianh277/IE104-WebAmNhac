@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/artist_album.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <link rel="stylesheet" href="/Element/Music-player/CSS/music_player.css">
 </head>
 <body>
     <main>
@@ -525,31 +526,56 @@
                 <hr color="#212e51" width="80%" size="0.5px" />
     
                 <div class="rnav__list rnav__notification">
-                    <ul class="r-list-group">Recently played
-                        <li class="r-list-group-item">
-                            <img src="node_modules/image/Amnhac.png" alt=""  class="r-img-user" >
-                            <div class="usercard-info">
-                                <div>
-                                    <span class="img-user-name">Unholy (feat. Kim Petras)</span>
+                    <div class="musicPlayer">
+                        <div class="songBar">
+                            <div class="songInfos">
+                                <div class="imageContainer">
+                                    <img src="" class="track-art">
                                 </div>
-                                <div>
-                                    <span class="song-user">Sam Smith, Kim Petras</span>
-                                </div>
-                            </div>
-                    
-                        </li>
-                        <li class="r-list-group-item">
-                            <img src="node_modules/image/Amnhac.png" alt=""  class="r-img-user" >
-                            <div class="usercard-info">
-                                  <div>
-                                    <span class="img-user-name">Shut down</span>
-                                  </div>
-                                  <div>
-                                    <span class="song-user">BLACKPINK</span>
+                                <div class="songDescription">
+                                    <p class="title">Chim Sau</p>
+                                    <p class="artist">MCK</p>
                                 </div>
                             </div>
-                        </li>  
-                    </ul>
+                            <!-- <div class="icons">
+                                <i class="fa-regular fa-heart"></i>
+                            </div> -->
+                        </div>
+                        <div class="progressController">
+                            <div class="controlButtons">
+                              <span class="shuffle-btn">
+                                <i class="fa-solid fa-shuffle"></i>   
+                              </span>
+                              <span class="backward-btn">
+                                <i class="fa-solid fa-backward"></i>    
+                              </span>
+                              <span class="play-btn">
+                                <i class="fas fa-play"></i>
+                              </span>
+                              <span class="forward-btn">
+                                <i class="fa-solid fa-forward"></i>
+                              </span>
+                                <!-- <i class="play-pause fas fa-play"></i> -->
+                                <span class="repeat-btn">
+                                  <i class="fa-solid fa-repeat"></i>
+                                </span>
+                                
+                            </div>
+                            <div class="progressContainer">
+                                  <div id="start">0:00</div>
+                                  <input type="range" min="1" max="100" value="0" class="seek_slider" >
+                                  <audio class="song" src="./Music/Chimsau.mp3"></audio>
+                                  <div id="end">0:00</div>
+                                
+                            </div>
+                        </div>
+                        <!-- <div class="otherFeatures">
+                            <i class="fa-solid fa-repeat"></i>
+                            <i class="fa-solid fa-repeat"></i>
+                            <i class="fa-solid fa-repeat"></i>
+                            <i class="fa-solid fa-repeat"></i>
+                        </div> -->
+                    </div>
                     <!-- <span class="SeeAll">See all</span> -->
                 </div>         
             </nav>

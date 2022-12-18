@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="/Element/playlist/main.css">
   <link rel="stylesheet" href="/Page/User_Profile/CSS/UserProfile_Page.css">
   <link rel="stylesheet" href="/Element/artitst-list/main.css">
+  <link rel="stylesheet" href="/Element/Music-player/CSS/music_player.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/User.css">
 </head>
     
     
@@ -107,6 +109,25 @@
                 </div> 
             </header>  
             <div class="container">
+              <div class="user">
+                <div class="user__title">
+                    <div class="user__me">
+                        <li class="user__in4">
+                            <img src="node_modules/image/NPavt.jpg" alt="" class="img__avt">
+                            <div class="user__n">
+                                <div class="user__info__type">Profile</div>
+                                <div class="user__info__cs"><b>Đỗ Trần Mai Anh</b></div>
+                                <div class="user__info__name">
+                                    <i class="fa-solid fa-user"></i> &nbsp;&nbsp;
+                                    20 following
+                                </div>
+                                
+                            </div>
+                        
+                        </li>
+                    </div>   
+                </div>
+            </div>
                 <div class="category">
                     <div class="category__toptrack">
                       <a href="./Userprofile_toptrack.html">
@@ -193,8 +214,7 @@
             <div class="rnav__list rnav__notification">
                 <ul class="r-list-group">Notification
 
-                </ul>
-                <span class="SeeAll">See all</span>
+                </ul>   
             </div>
             
             <hr color="#212e51" width="80%" size="0.5rem" />
@@ -226,38 +246,62 @@
                     </div>
                 </li>  
             </ul>
-              <span class="SeeAll">See all</span>
+     
             </div>
             
             <hr color="#212e51" width="80%" size="0.5px" />
 
             <div class="rnav__list rnav__notification">
-                <ul class="r-list-group">Recently played
-                    <li class="r-list-group-item">
-                        <img src="/Element/menuheader/asset/img/music.png" alt=""  class="r-img-user" >
-                        <div class="usercard-info">
-                            <div>
-                                <span class="img-user-name">Unholy (feat. Kim Petras)</span>
-                            </div>
-                            <div>
-                                <span class="song-user">Sam Smith, Kim Petras</span>
-                            </div>
+              <div class="musicPlayer">
+                <div class="songBar">
+                    <div class="songInfos">
+                        <div class="imageContainer">
+                            <img src="" class="track-art">
                         </div>
-                
-                    </li>
-                    <li class="r-list-group-item">
-                        <img src="/Element/menuheader/asset/img/music.png" alt=""  class="r-img-user" >
-                        <div class="usercard-info">
-                              <div>
-                                <span class="img-user-name">Shut down</span>
-                              </div>
-                              <div>
-                                <span class="song-user">BLACKPINK</span>
-                            </div>
+                        <div class="songDescription">
+                            <p class="title">Chim Sau</p>
+                            <p class="artist">MCK</p>
                         </div>
-                    </li>  
-                </ul>
-                <span class="SeeAll">See all</span>
+                    </div>
+                    <!-- <div class="icons">
+                        <i class="fa-regular fa-heart"></i>
+                    </div> -->
+                </div>
+                <div class="progressController">
+                    <div class="controlButtons">
+                      <span class="shuffle-btn">
+                        <i class="fa-solid fa-shuffle"></i>   
+                      </span>
+                      <span class="backward-btn">
+                        <i class="fa-solid fa-backward"></i>    
+                      </span>
+                      <span class="play-btn">
+                        <i class="fas fa-play"></i>
+                      </span>
+                      <span class="forward-btn">
+                        <i class="fa-solid fa-forward"></i>
+                      </span>
+                        <!-- <i class="play-pause fas fa-play"></i> -->
+                        <span class="repeat-btn">
+                          <i class="fa-solid fa-repeat"></i>
+                        </span>
+                        
+                    </div>
+                    <div class="progressContainer">
+                          <div id="start">0:00</div>
+                          <input type="range" min="1" max="100" value="0" class="seek_slider" >
+                          <audio class="song" src="./Music/Chimsau.mp3"></audio>
+                          <div id="end">0:00</div>
+                        
+                    </div>
+                </div>
+                <!-- <div class="otherFeatures">
+                    <i class="fa-solid fa-repeat"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div> -->
+            </div>
             </div>         
           </nav>
       </div>
